@@ -47,7 +47,7 @@ header{
     color:#40916c;
 }
 nav{
-background:#40916c;
+background:#6fa84f;
 padding:15px;
 text-align:center;
 }
@@ -65,7 +65,7 @@ text-align:center;
 }
 
 button{
-background:#40916c;
+background:#6fa84f;
 color:white;
 padding:15px 30px;
 border:none;
@@ -75,7 +75,7 @@ border-radius:8px;
 }
 
 button:hover{
-background:#40916c;
+background:#6fa84f;
 }
 
 footer{
