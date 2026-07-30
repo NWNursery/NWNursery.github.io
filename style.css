@@ -6,12 +6,47 @@ color:#333;
 }
 
 header{
-background:#2d6a4f;
-color:white;
-padding:40px;
-text-align:center;
+    background:#dff2d8;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
 }
 
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 30px;
+}
+
+.logo img{
+    height:70px;
+    width:auto;
+    display:block;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+    margin:0;
+    padding:0;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#2f5d34;
+    font-weight:bold;
+    font-size:18px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#6aa84f;
+}
 nav{
 background:#40916c;
 padding:15px;
