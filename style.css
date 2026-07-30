@@ -1,7 +1,7 @@
 body{
 font-family:Arial,Helvetica,sans-serif;
 margin:0;
-background:#95d5b2;
+background:#40916c;
 color:#333;
 }
 
@@ -37,17 +37,17 @@ header{
 
 .nav-links a{
     text-decoration:none;
-    color:#95d5b2;
+    color:#40916c;
     font-weight:bold;
     font-size:18px;
     transition:.3s;
 }
 
 .nav-links a:hover{
-    color:#95d5b2;
+    color:#40916c;
 }
 nav{
-background:#95d5b2;
+background:#40916c;
 padding:15px;
 text-align:center;
 }
@@ -65,7 +65,7 @@ text-align:center;
 }
 
 button{
-background:#95d5b2;
+background:#40916c;
 color:white;
 padding:15px 30px;
 border:none;
@@ -75,11 +75,11 @@ border-radius:8px;
 }
 
 button:hover{
-background:#95d5b2;
+background:#40916c;
 }
 
 footer{
-background:#95d5b2;
+background:#40916c;
 color:white;
 padding:20px;
 text-align:center;
