@@ -1,12 +1,12 @@
 body{
 font-family:Arial,Helvetica,sans-serif;
 margin:0;
-background:#588157;
+background:#b7e4c7;
 color:#333;
 }
 
 header{
-    background:#588157;
+    background:#b7e4c7;
     position:sticky;
     top:0;
     z-index:1000;
@@ -79,7 +79,7 @@ background:#40916c;
 }
 
 footer{
-background:#588157;
+background:#b7e4c7;
 color:white;
 padding:20px;
 text-align:center;
