@@ -1,12 +1,12 @@
 body{
 font-family:Arial,Helvetica,sans-serif;
 margin:0;
-background:#588157;
+background:#d8f3dc;
 color:#333;
 }
 
 header{
-    background:#95d5b2;
+    background:#d8f3dc;
     position:sticky;
     top:0;
     z-index:1000;
@@ -37,7 +37,7 @@ header{
 
 .nav-links a{
     text-decoration:none;
-    color:#40916c;
+    color:#f1faee;
     font-weight:bold;
     font-size:18px;
     transition:.3s;
@@ -79,7 +79,7 @@ background:#40916c;
 }
 
 footer{
-background:#40916c;
+background:#d8f3dc;
 color:white;
 padding:20px;
 text-align:center;
