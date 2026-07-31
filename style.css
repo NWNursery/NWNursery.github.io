@@ -64,24 +64,10 @@ padding:80px;
 text-align:center;
 }
 
-button{
-background:#6fa84f;
-color:white;
-padding:15px 30px;
-border:none;
-font-size:18px;
-cursor:pointer;
-border-radius:8px;
-}
-
-button:hover{
-background:#6fa84f;
-}
-
 footer{
 background:#6fa84f;
-color:brown;
+color:2c2219;
 padding:20px;
 text-align:center;
-margin-top: 20px;
+margin-top:50px;
 }
