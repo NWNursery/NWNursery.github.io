@@ -71,3 +71,28 @@ padding:20px;
 text-align:center;
 margin-top:50px;
 }
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dcefd9;   /* Light green */
+    padding: 20px 40px;
+    color: #6F4E37;              /* Brown text */
+}
+
+footer-left {
+    text-align: left;
+}
+
+footer-center {
+    text-align: center;
+}
+
+footer-right {
+    text-align: right;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.5;
+}
