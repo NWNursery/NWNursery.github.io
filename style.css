@@ -61,14 +61,14 @@ font-weight:bold;
 
 .hero{
 padding:80px;
-text-align:left;
+text-align:center
 }
 
 footer{
 background:#6fa84f;
 color:2c2219;
 padding:20px;
-text-align:center;
+text-align:left;
 margin-top:50px;
 }
 footer {
