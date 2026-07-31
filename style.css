@@ -75,9 +75,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #dcefd9;   /* Light green */
+    background-color: #6fa84f;   /* Light green */
     padding: 20px 40px;
-    color: #6F4E37;              /* Brown text */
+    color: #2c2219;              /* Brown text */
 }
 
 footer-left {
