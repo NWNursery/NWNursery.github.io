@@ -96,3 +96,18 @@ footer p {
     margin: 0;
     line-height: 1.5;
 }
+.footer-right a {
+    color: #3A2418;
+    text-decoration: none;
+    margin-left: 18px;
+    font-weight: 500;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 4px 0;
+    color: #3A2418;
+}
