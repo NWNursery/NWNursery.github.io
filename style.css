@@ -111,3 +111,24 @@ footer p {
     margin: 4px 0;
     color: #3A2418;
 }
+
+.contact-info {
+    font-size: 17px;
+    color: #2C2219;
+    line-height: 1.8;
+}
+
+.contact-info i {
+    color: #8CCB43;
+    width: 25px;
+    margin-right: 8px;
+}
+
+.contact-info a {
+    color: #2C2219;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #2D6A4F;
+}
