@@ -114,21 +114,21 @@ footer p {
 
 .contact-info {
     font-size: 17px;
-    color: #2C2219;
+    color: #3b2f25;
     line-height: 1.8;
 }
 
 .contact-info i {
-    color: #8CCB43;
+    color: #3b2f25;
     width: 25px;
     margin-right: 8px;
 }
 
 .contact-info a {
-    color: #2C2219;
+    color: #3b2f25;
     text-decoration: none;
 }
 
 .contact-info a:hover {
-    color: #2D6A4F;
+    color: #3b2f25;
 }
