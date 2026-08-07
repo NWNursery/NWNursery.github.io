@@ -136,33 +136,5 @@ footer p {
 .contact-info a:hover {
     color: #3b2f25;
 }
-.footer-info-box {
-    background-color: white;
-    width: 85%;
-    max-width: 1100px;
-    margin: 40px auto 20px;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-}
 
-.footer-column {
-    flex: 1;
-    padding: 0 20px;
-}
 
-.footer-column h3 {
-    color: #2d6a4f;
-    margin-bottom: 12px;
-}
-
-.footer-column p {
-    color: #333;
-    margin: 6px 0;
-    line-height: 1.5;
-}
