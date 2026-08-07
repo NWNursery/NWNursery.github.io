@@ -88,6 +88,15 @@ footer {
     padding: 20px 40px;
     color: #2c2219;              /* Brown text */
 }
+.text-box {
+    background-color: 6fa84f;
+    border: 2px solid white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
 footer-left {
     text-align: left;
 }
