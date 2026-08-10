@@ -106,4 +106,17 @@ footer {
     font-size: 20px;
 }
 
+@media (max-width: 600px) {
+
+    .footer-info-box {
+        width: 95%;
+        padding: 25px 15px;
+    }
+
+    .footer-item {
+        font-size: 16px;
+        text-align: center;
+    }
+
+
 
