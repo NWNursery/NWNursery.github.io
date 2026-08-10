@@ -79,7 +79,8 @@ footer {
 }
 
 .footer-box {
-    background-color: white;
+    background-color:#6fa84f;
+    border: 2px solid white;
     max-width: 1100px;
     margin: 0 auto;
     padding: 30px 40px;
