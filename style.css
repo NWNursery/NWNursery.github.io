@@ -117,6 +117,231 @@ footer {
         font-size: 16px;
         text-align: center;
     }
+@media (max-width: 768px) {
 
+    /* Make the entire website fit the phone */
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* General text */
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    /* ========================================
+       HEADER
+       ======================================== */
+
+    header {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+
+    /* Logo */
+    header img,
+    .logo img {
+        max-width: 180px;
+        height: auto;
+    }
+
+
+    /* ========================================
+       NAVIGATION
+       ======================================== */
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+
+
+    /* ========================================
+       WHITE CONTACT INFORMATION BOX
+       ======================================== */
+
+    .header-info-box {
+        width: 92%;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .info-item {
+        align-items: flex-start;
+    }
+
+    .info-item p {
+        font-size: 15px;
+    }
+
+
+    /* ========================================
+       THREE WHITE BOXES
+       Plants / Services / Tips
+       ======================================== */
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 15px;
+    }
+
+    .feature-box {
+        width: 90%;
+        max-width: 400px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+
+    /* ========================================
+       GENERAL CONTENT BOXES
+       ======================================== */
+
+    .content-box,
+    .text-box {
+        width: 90%;
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+
+    /* ========================================
+       IMAGES
+       ======================================== */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* ========================================
+       HERO SECTION
+       ======================================== */
+
+    .hero {
+        min-height: 300px;
+        height: auto;
+        padding: 60px 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+
+    /* ========================================
+       FOOTER
+       ======================================== */
+
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px 15px;
+        text-align: center;
+    }
+
+
+    /* Footer columns stack vertically */
+    .footer-info-box {
+        width: 92%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .footer-column {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+
+    /* ========================================
+       CONTACT PAGE
+       ======================================== */
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+
+    /* ========================================
+       TABLES
+       ======================================== */
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+
+    /* ========================================
+       BUTTONS
+       ======================================== */
+
+    button,
+    .button,
+    .btn {
+        max-width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+}
 
 
