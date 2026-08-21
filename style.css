@@ -191,3 +191,42 @@ footer {
 body {
     overflow-x: hidden;
 }
+    /* ===== CENTER THE CONTACT PAGE BODY ===== */
+
+.contact-section {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto !important;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact-section h1,
+.contact-section > p,
+.contact-section h2,
+.contact-section h3,
+.contact-section p {
+    text-align: center !important;
+}
+
+.contact-info {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+    .contact-info h2,
+.contact-info h3,
+.contact-info p {
+    text-align: center !important;
+}
+
+/* Prevent content from being cut off on the left */
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
