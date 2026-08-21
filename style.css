@@ -142,30 +142,3 @@ footer {
 
     .nav-links li {
         flex-shrink: 1;
-
-        /* CENTER CONTACT PAGE */
-
-section.contact-section {
-    display: block !important;
-    width: 80vw !important;
-    max-width: 900px !important;
-    margin-left: 10vw !important;
-    margin-right: 10vw !important;
-    padding: 30px !important;
-    box-sizing: border-box !important;
-    text-align: center !important;
-}
-
-section.contact-section h1,
-section.contact-section h2,
-section.contact-section h3,
-section.contact-section p {
-    text-align: center !important;
-}
-
-section.contact-section .contact-info {
-    width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    text-align: center !important;
-}
