@@ -133,8 +133,14 @@ footer {
     gap: 10px;
 }
 
+.address i {
+    flex-shrink: 0;
+}
+
 .address span {
+    display: inline-block;
     text-align: left;
+    line-height: 1.8;
 }
 @media (max-width: 768px) {
 
