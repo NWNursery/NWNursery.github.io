@@ -159,18 +159,40 @@ footer {
         flex-shrink: 1;
 
 }
- /* CENTER THE BODY CONTENT ON ALL PAGES */
-
-main {
-    width: 80%;
-    max-width: 1000px;
-    margin: 40px auto !important;
-    text-align: center !important;
+ .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    background-color: #ffffff;
 }
 
-main h1,
-main h2,
-main h3,
-main p {
-    text-align: center !important;
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-center {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer-right img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
 }
