@@ -72,6 +72,22 @@ font-weight:bold;
 padding:80px;
 text-align:center
 }
+.page-content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.plants-section {
+    text-align: center;
+}
+
+.plants-section h1,
+.plants-section h2,
+.plants-section p {
+    text-align: center;
+}
 
 footer {
     background-color: #6fa84f;
