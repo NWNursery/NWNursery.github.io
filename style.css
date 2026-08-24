@@ -164,3 +164,18 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+.address {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.address i {
+    flex-shrink: 0;
+}
+
+.address span {
+    display: inline-block;
+    text-align: left;
+    line-height: 1.8;
+}
