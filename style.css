@@ -178,4 +178,18 @@ footer {
     display: block;
     margin: 20px auto;
 }
- 
+ /* CENTER THE BODY CONTENT ON ALL PAGES */
+
+main {
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto !important;
+    text-align: center !important;
+}
+
+main h1,
+main h2,
+main h3,
+main p {
+    text-align: center !important;
+}
