@@ -104,7 +104,36 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
 }
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-center {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-left p,
+.footer-center p {
+    margin: 10px 0;
+}
+
+.footer-right i {
+    font-size: 24px;
+    margin-left: 15px;
+}
 .footer-info p {
     color: #3b281c;
     font-size: 20px;
