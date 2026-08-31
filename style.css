@@ -1,205 +1,473 @@
-body{
-font-family:Arial,Helvetica,sans-serif;
-margin:0;
-background:#6fa84f;
-color:#333;
+/* =========================================
+   NORWAY NURSERY - MAIN WEBSITE
+   ========================================= */
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0;
+
+    background: #6fa84f;
+
+    color: #3b2f25;
 }
 
-header{
-    background:#6fa84f;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header-box {
+
+    background: #6fa84f;
+
+    border: 1px solid white;
+
+    max-width: 1200px;
+
+    margin: 10px auto 0;
+
+    box-sizing: border-box;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
 }
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.navbar {
+
+    min-height: 100px;
+
+    padding: 5px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+
+/* LOGO */
+
+.logo img {
+
+    height: 90px;
+
+    width: auto;
+
+    display: block;
+}
+
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    white-space: nowrap;
+}
+
+
+.nav-links li {
+
+    display: inline-block;
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #3b2f25;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+
+    color: white;
+}
+
+
+/* =========================================
+   MAIN / HERO
+   ========================================= */
+
+.hero {
+
+    max-width: 1200px;
+
+    min-height: 400px;
+
+    margin: 0 auto;
+
+    padding: 70px 40px;
+
+    box-sizing: border-box;
+
+    border-left: 1px solid white;
+
+    border-right: 1px solid white;
+
+    border-bottom: 1px solid white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   WHITE FRAME AROUND TEXT
+   ========================================= */
+
 .text-box {
-    background-color: 6fa84f;
+
+    background-color: #6fa84f;
+
     border: 2px solid white;
-    padding: 25px;
-    margin: 20px auto;
+
+    padding: 35px;
+
+    width: 80%;
+
     max-width: 800px;
+
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    box-sizing: border-box;
+
     text-align: center;
 }
-.navbar{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:8px 30px;
+
+
+.text-box h2 {
+
+    margin-top: 0;
+
+    color: #3b2f25;
+
+    font-size: 36px;
 }
 
-.logo img{
-    height:90px;
-    width:auto;
+
+.text-box p {
+
+    color: #3b2f25;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 0;
 }
 
-.nav-links{
-    display:flex;
-    list-style:none;
-    gap:30px;
-    margin:0;
-    padding:0;
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
 }
 
-.nav-links a{
-    text-decoration:none;
-    color:#3b2f25;
-    font-weight:bold;
-    font-size:18px;
-    transition:.3s;
+
+/* OUTER WHITE FRAME */
+
+.footer-box {
+
+    background-color: #6fa84f;
+
+    border-left: 1px solid white;
+
+    border-right: 1px solid white;
+
+    border-bottom: 1px solid white;
+
+    border-top: 1px solid white;
+
+    padding: 25px 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-sizing: border-box;
 }
 
-.nav-links a:hover{
-    color:#40916c;
-}
-nav{
-background:#6fa84f;
-padding:15px;
-text-align:center;
+
+/* =========================================
+   FOOTER LEFT
+   ========================================= */
+
+.footer-left {
+
+    flex: 1;
+
+    text-align: left;
 }
 
-nav a{
-color:#3b2f25;
-text-decoration:none;
-margin:20px;
-font-weight:bold;
+
+.footer-left p {
+
+    margin: 0;
+
+    color: #3b2f25;
+
+    font-size: 16px;
 }
 
-.hero{
-padding:80px;
-text-align:center
+
+.address {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
 }
+
+
+.address i {
+
+    flex-shrink: 0;
+
+    margin-top: 3px;
+}
+
+
+.address span {
+
+    line-height: 1.6;
+
+    text-align: left;
+}
+
+
+/* =========================================
+   FOOTER CENTER
+   ========================================= */
+
+.footer-center {
+
+    flex: 1;
+
+    text-align: center;
+}
+
+
+.footer-center p {
+
+    margin: 8px 0;
+
+    color: #3b2f25;
+
+    font-size: 16px;
+}
+
+
+.footer-center i {
+
+    margin-right: 8px;
+}
+
+
+/* =========================================
+   FOOTER RIGHT
+   ========================================= */
+
+.footer-right {
+
+    flex: 1;
+
+    text-align: right;
+}
+
+
+.footer-right i {
+
+    color: #3b2f25;
+
+    font-size: 25px;
+
+    margin-left: 18px;
+}
+
+
+/* =========================================
+   OTHER PAGE CONTENT
+   ========================================= */
+
 .page-content {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 30px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 50px 30px;
+
     text-align: center;
+
+    border-left: 1px solid white;
+
+    border-right: 1px solid white;
 }
+
 
 .plants-section {
+
     text-align: center;
 }
+
 
 .plants-section h1,
 .plants-section h2,
 .plants-section p {
+
     text-align: center;
 }
 
-footer {
-    background-color: #6fa84f;
-    padding: 40px 20px;
-}
 
-.footer-box {
-    background-color:#6fa84f;
-    border: 2px solid white;
-    max-width: 2000px;
-    margin: 0 auto;
-    padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-}
-.footer-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/* =========================================
+   MOBILE
+   ========================================= */
 
-.footer-left {
-    flex: 1;
-    text-align: left;
-}
-
-.footer-center {
-    flex: 1;
-    text-align: center;
-}
-
-.footer-right {
-    flex: 1;
-    text-align: right;
-}
-
-.footer-left p,
-.footer-center p {
-    margin: 10px 0;
-}
-
-.footer-right i {
-    font-size: 24px;
-    margin-left: 15px;
-}
-.footer-info p {
-    color: #3b281c;
-    font-size: 20px;
-    margin: 12px 0;
-}
-
-.social-icons {
-    margin-top: 20px;
-}
-
-.social-icons a {
-    color: #3b281c;
-    text-decoration: none;
-    margin-right: 20px;
-    font-size: 20px;
-
-    }
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
-}
-
-.nav-links li {
-    display: inline-block;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #4b2e1e;
-    font-weight: bold;
-}
-.address {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.address i {
-    flex-shrink: 0;
-}
-
-.address span {
-    display: inline-block;
-    text-align: left;
-    line-height: 1.8;
-}
 @media (max-width: 768px) {
 
-    .nav-links {
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-        white-space: nowrap;
+    .header-box {
+
+        margin-top: 5px;
+
+        width: 98%;
     }
+
+
+    .navbar {
+
+        padding: 5px 10px;
+
+        min-height: 75px;
+    }
+
+
+    .logo img {
+
+        height: 60px;
+    }
+
+
+    .nav-links {
+
+        gap: 8px;
+    }
+
 
     .nav-links a {
-        font-size: 12px;
+
+        font-size: 11px;
     }
 
-    .nav-links li {
-        flex-shrink: 1;
+
+    .hero {
+
+        width: 98%;
+
+        padding: 40px 15px;
+
+        min-height: 350px;
+    }
+
+
+    .text-box {
+
+        width: 95%;
+
+        padding: 25px 15px;
+    }
+
+
+    .text-box h2 {
+
+        font-size: 27px;
+    }
+
+
+    .text-box p {
+
+        font-size: 15px;
+    }
+
+
+    footer {
+
+        width: 98%;
+    }
+
+
+    .footer-box {
+
+        padding: 20px 10px;
+
+        gap: 5px;
+    }
+
+
+    .footer-left p,
+    .footer-center p {
+
+        font-size: 11px;
+    }
+
+
+    .footer-right i {
+
+        font-size: 18px;
+
+        margin-left: 8px;
+    }
+}
      
