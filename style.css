@@ -1,82 +1,93 @@
-/* =========================================
+/* =========================================================
    NORWAY NURSERY
-   MAIN WEBSITE STYLE
-   ========================================= */
+   COMPLETE WEBSITE STYLE
+   ========================================================= */
 
+* {
+    box-sizing: border-box;
+}
 
-/* =========================================
-   BODY
-   ========================================= */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     background: #6fa84f;
     color: #3b2f25;
 }
 
 
-/* =========================================
+/* =========================================================
+   MAIN WEBSITE FRAME
+   ========================================================= */
+
+.site-frame {
+    width: 94%;
+    max-width: 1200px;
+    margin: 12px auto;
+    border: 1px solid white;
+}
+
+
+/* =========================================================
    HEADER
-   ========================================= */
+   ========================================================= */
 
 header {
     background: #6fa84f;
-    max-width: 1200px;
-    margin: 10px auto 0;
-    border: 1px solid white;
-    box-sizing: border-box;
+    border-bottom: 1px solid white;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-
-/* =========================================
-   NAVIGATION
-   ========================================= */
-
 .navbar {
-    min-height: 100px;
-    padding: 5px 30px;
+    min-height: 105px;
+    padding: 5px 25px;
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
+    justify-content: space-between;
 }
 
 
 /* LOGO */
 
+.logo {
+    display: block;
+    flex-shrink: 0;
+}
+
 .logo img {
-    height: 90px;
+    height: 88px;
     width: auto;
     display: block;
 }
 
 
-/* NAVIGATION LINKS */
+/* NAVIGATION */
 
 .nav-links {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 25px;
+
     list-style: none;
     margin: 0;
     padding: 0;
+
     white-space: nowrap;
 }
 
-.nav-links li {
-    display: inline-block;
-}
-
 .nav-links a {
-    text-decoration: none;
     color: #3b2f25;
+    text-decoration: none;
+
+    font-size: 15px;
     font-weight: bold;
-    font-size: 16px;
+
     transition: 0.3s;
 }
 
@@ -85,190 +96,311 @@ header {
 }
 
 
-/* =========================================
-   MAIN PAGE FRAME
-   ========================================= */
+/* SHOPPING CART */
 
-.page-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 40px;
-    box-sizing: border-box;
-
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
+.cart-icon {
+    color: #3b2f25;
+    font-size: 20px;
+    margin-left: 5px;
 }
 
 
-/* =========================================
-   PAGE TITLE
-   ========================================= */
+/* =========================================================
+   PAGE CONTENT
+   ========================================================= */
+
+.page-content {
+    padding: 50px 40px;
+
+    border-bottom: 1px solid white;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   PAGE TITLE BOX
+   ========================================================= */
 
 .page-header {
-    background: #6fa84f;
-    color: #3b2f25;
-
     border: 2px solid white;
     border-radius: 10px;
 
     padding: 35px;
-    margin-bottom: 35px;
+    margin: 0 auto 40px;
+
+    max-width: 900px;
 
     text-align: center;
-    box-sizing: border-box;
 }
 
 .page-header h1 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 38px;
+    margin: 0 0 15px;
+
+    font-family: Georgia, serif;
+    font-size: 40px;
+
+    color: #3b2f25;
 }
 
 .page-header p {
-    line-height: 1.7;
+    margin: 0;
+
     font-size: 17px;
+    line-height: 1.7;
 }
 
 
-/* =========================================
-   GENERAL CONTENT
-   ========================================= */
+/* =========================================================
+   CONTENT LAYOUT
+   MAIN CONTENT + SIDEBAR
+   ========================================================= */
 
-.page-content h1,
-.page-content h2,
-.page-content p {
+.content-layout {
+    display: grid;
+
+    grid-template-columns: minmax(0, 3fr) minmax(250px, 1fr);
+
+    gap: 0;
+
+    text-align: left;
+}
+
+
+/* MAIN CONTENT */
+
+.main-content {
+    padding: 0 35px 20px 0;
+}
+
+
+/* RIGHT SIDEBAR */
+
+.sidebar {
+    border-left: 1px solid white;
+
+    padding: 0 25px 20px;
+}
+
+
+/* =========================================================
+   CONTENT CARDS
+   ========================================================= */
+
+.content-card {
+    border-bottom: 1px solid white;
+
+    padding: 0 0 30px;
+    margin-bottom: 30px;
+}
+
+.content-card:last-child {
+    border-bottom: none;
+}
+
+.content-card h2 {
+    font-family: Georgia, serif;
+
+    font-size: 27px;
+
+    margin: 0 0 12px;
+
     color: #3b2f25;
 }
 
+.content-card p {
+    font-size: 16px;
 
-/* =========================================
-   PLANTS
-   ========================================= */
-
-.plants-section {
-    text-align: center;
-}
-
-.plants-section h1 {
-    font-size: 38px;
-}
-
-.plants-section h2 {
-    border: 1px solid white;
-    border-radius: 8px;
-
-    padding: 15px;
-    margin: 30px auto 15px;
-
-    max-width: 850px;
-}
-
-.plants-section p {
-    max-width: 850px;
-    margin: 0 auto 25px;
     line-height: 1.7;
+
+    margin: 0 0 18px;
 }
 
 
-/* =========================================
-   SERVICES
-   ========================================= */
+/* =========================================================
+   WHITE FRAMED BOX
+   ========================================================= */
 
-.services-section {
-    text-align: center;
-}
-
-.services-section h2 {
-    border: 1px solid white;
-    border-radius: 8px;
-
-    padding: 15px;
-
-    max-width: 850px;
-    margin: 30px auto 15px;
-}
-
-.services-section p {
-    max-width: 850px;
-    margin: 0 auto 25px;
-    line-height: 1.7;
-}
-
-
-/* =========================================
-   TIPS
-   ========================================= */
-
-.container {
-    max-width: 1000px;
-    width: 90%;
-    margin: 40px auto;
-}
-
-
-/* Each tip gets a white frame */
-
-.tip {
-    background: #6fa84f;
-
+.white-box {
     border: 2px solid white;
+
     border-radius: 10px;
 
     padding: 25px;
+
     margin-bottom: 25px;
 
-    box-sizing: border-box;
+    text-align: center;
 }
 
-.tip h2 {
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.nursery-button {
+    display: inline-block;
+
     color: #3b2f25;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+    border: 2px solid white;
+
+    border-radius: 7px;
+
+    padding: 12px 20px;
+
+    transition: 0.3s;
+}
+
+.nursery-button:hover {
+    background: white;
+    color: #3b2f25;
+}
+
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
+
+.content-image {
+    width: 100%;
+
+    display: block;
+
+    border: 2px solid white;
+
+    border-radius: 10px;
+
+    margin: 20px 0;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar-card {
+    border: 2px solid white;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+.sidebar-card .icon {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+.sidebar-card h2 {
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    margin: 5px 0 15px;
+}
+
+.sidebar-card p {
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   SIDEBAR CATEGORIES
+   ========================================================= */
+
+.categories {
+    text-align: left;
+
+    border: none;
+}
+
+.categories h3 {
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
     margin-top: 0;
 }
 
+.categories ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.categories li {
+    padding: 7px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+
+/* =========================================================
+   TIPS
+   ========================================================= */
+
+.tip {
+    border: 2px solid white;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    text-align: left;
+}
+
+.tip h2 {
+    font-family: Georgia, serif;
+
+    margin-top: 0;
+
+    font-size: 25px;
+}
+
 .tip p {
-    color: #3b2f25;
     line-height: 1.7;
 }
 
 
-/* =========================================
-   ABOUT
-   ========================================= */
-
-.about-section {
-    text-align: center;
-}
-
-.about-section p {
-    max-width: 850px;
-    margin: 20px auto;
-    line-height: 1.8;
-    font-size: 17px;
-}
-
-
-/* =========================================
+/* =========================================================
    CONTACT
-   ========================================= */
-
-.contact-section {
-    text-align: center;
-}
+   ========================================================= */
 
 .contact-info {
-    max-width: 700px;
-    margin: 30px auto;
-    padding: 30px;
+    max-width: 750px;
+
+    margin: 0 auto;
 
     border: 2px solid white;
+
     border-radius: 10px;
 
-    box-sizing: border-box;
+    padding: 35px;
+
+    text-align: center;
 }
 
 .contact-info h2 {
-    margin-top: 20px;
+    font-family: Georgia, serif;
+
+    margin-top: 25px;
 }
 
 .contact-info h2:first-child {
@@ -281,167 +413,112 @@ header {
 
 .contact-info a {
     color: #3b2f25;
+
     font-weight: bold;
 }
 
 
-/* =========================================
-   HOME PAGE HERO
-   ========================================= */
-
-.hero {
-    max-width: 1200px;
-    min-height: 400px;
-
-    margin: 0 auto;
-
-    padding: 70px 40px;
-
-    box-sizing: border-box;
-
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* HOME TEXT FRAME */
-
-.text-box {
-    background-color: #6fa84f;
-
-    border: 2px solid white;
-    border-radius: 10px;
-
-    padding: 35px;
-
-    width: 80%;
-    max-width: 800px;
-
-    box-sizing: border-box;
-
-    text-align: center;
-}
-
-.text-box h2 {
-    margin-top: 0;
-    font-size: 36px;
-}
-
-.text-box p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-
-/* =========================================
+/* =========================================================
    FOOTER
-   ========================================= */
+   ========================================================= */
 
 footer {
-    max-width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
+    background: #6fa84f;
 }
-
-
-/* WHITE FRAME */
 
 .footer-box {
-    background: #6fa84f;
+    min-height: 100px;
 
-    border: 1px solid white;
+    padding: 20px 30px;
 
-    padding: 25px 35px;
+    display: grid;
 
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+
     align-items: center;
 
-    box-sizing: border-box;
+    border-top: 1px solid white;
 }
 
 
-/* LEFT */
+/* FOOTER LEFT */
 
 .footer-left {
-    flex: 1;
     text-align: left;
 }
 
 .footer-left p {
     margin: 0;
-    font-size: 16px;
+
+    font-size: 15px;
 }
-
-
-/* CENTER */
-
-.footer-center {
-    flex: 1;
-    text-align: center;
-}
-
-.footer-center p {
-    margin: 8px 0;
-    font-size: 16px;
-}
-
-
-/* RIGHT */
-
-.footer-right {
-    flex: 1;
-    text-align: right;
-}
-
-.footer-right i {
-    font-size: 25px;
-    margin-left: 18px;
-}
-
-
-/* ADDRESS */
 
 .address {
     display: flex;
+
     align-items: flex-start;
+
     gap: 10px;
 }
 
 .address i {
     flex-shrink: 0;
+
     margin-top: 3px;
 }
 
 .address span {
     line-height: 1.6;
+
     text-align: left;
 }
 
 
-/* =========================================
+/* FOOTER CENTER */
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-center p {
+    margin: 8px 0;
+
+    font-size: 15px;
+}
+
+
+/* FOOTER RIGHT */
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right i {
+    font-size: 25px;
+
+    margin-left: 18px;
+}
+
+
+/* =========================================================
    MOBILE
-   ========================================= */
+   ========================================================= */
 
 @media (max-width: 768px) {
 
-    header {
+    .site-frame {
         width: 98%;
-        margin-top: 5px;
+        margin: 5px auto;
     }
 
     .navbar {
         min-height: 75px;
+
         padding: 5px 10px;
     }
 
     .logo img {
-        height: 60px;
+        height: 58px;
     }
 
     .nav-links {
@@ -449,12 +526,15 @@ footer {
     }
 
     .nav-links a {
-        font-size: 11px;
+        font-size: 10px;
+    }
+
+    .cart-icon {
+        font-size: 14px;
     }
 
     .page-content {
-        width: 98%;
-        padding: 35px 15px;
+        padding: 30px 15px;
     }
 
     .page-header {
@@ -462,55 +542,45 @@ footer {
     }
 
     .page-header h1 {
-        font-size: 28px;
+        font-size: 30px;
     }
 
     .page-header p {
         font-size: 15px;
     }
 
-    .hero {
-        width: 98%;
-        padding: 40px 15px;
+    .content-layout {
+        grid-template-columns: 1fr;
     }
 
-    .text-box {
-        width: 95%;
-        padding: 25px 15px;
+    .main-content {
+        padding: 0;
     }
 
-    .text-box h2 {
-        font-size: 27px;
-    }
+    .sidebar {
+        border-left: none;
 
-    .text-box p {
-        font-size: 15px;
-    }
+        border-top: 1px solid white;
 
-    .container {
-        width: 95%;
-    }
+        padding: 30px 0 0;
 
-    .tip {
-        padding: 20px;
-    }
-
-    footer {
-        width: 98%;
+        margin-top: 20px;
     }
 
     .footer-box {
-        padding: 20px 10px;
-        gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        padding: 15px 8px;
     }
 
     .footer-left p,
     .footer-center p {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .footer-right i {
-        font-size: 18px;
-        margin-left: 8px;
+        font-size: 17px;
+
+        margin-left: 7px;
     }
 }
