@@ -262,3 +262,44 @@ footer {
 .divider {
     border-top: 1px solid white;
 }
+        .page-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border: 1px solid white;
+}
+
+header {
+    border-bottom: 1px solid white;
+}
+
+.hero {
+    border-bottom: 1px solid white;
+    padding: 30px;
+}
+
+.content-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main-content {
+    padding: 30px;
+}
+
+.sidebar {
+    border-left: 1px solid white;
+    padding: 30px;
+}
+
+.sidebar-box {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+footer {
+    border-top: 1px solid white;
+    padding: 20px 30px;
+}
